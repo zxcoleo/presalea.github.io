@@ -277,9 +277,8 @@ body, html {
 
 
 .tradingtext {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
-    color: white;
     text-align: center; /* Para centrar el contenido horizontalmente */
 }
 
