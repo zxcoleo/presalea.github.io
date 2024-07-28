@@ -87,14 +87,36 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('DOMContentLoaded', () => {
     function getRandomColor() {
         const colors = [
-            'linear-gradient(90deg, rgba(255, 105, 180, 1) 50%, rgba(255, 20, 147, 0.966) 80%)',  // Deep Pink
-            'linear-gradient(90deg, rgba(173, 216, 230, 1) 50%, rgba(70, 130, 180, 0.966) 80%)',  // Steel Blue
-            'linear-gradient(90deg, rgba(144, 238, 144, 1) 50%, rgba(34, 139, 34, 0.966) 80%)',  // Forest Green
-            'linear-gradient(90deg, rgba(255, 255, 224, 1) 50%, rgba(255, 215, 0, 0.966) 80%)',  // Gold
-            'linear-gradient(90deg, rgba(255, 192, 203, 1) 50%, rgba(255, 105, 97, 0.966) 80%)',  // Light Coral
-            'linear-gradient(90deg, rgba(255, 228, 225, 1) 50%, rgba(255, 160, 122, 0.966) 80%)',  // Light Salmon
-            'linear-gradient(90deg, rgba(240, 248, 255, 1) 50%, rgba(176, 224, 230, 0.966) 80%)',  // Powder Blue
-            'linear-gradient(90deg, rgba(250, 240, 230, 1) 50%, rgba(255, 228, 181, 0.966) 80%)'   // Blanched Almond
+// Rojo Mate a Naranja Mate
+'linear-gradient(90deg, rgba(204, 51, 51, 1) 0%, rgba(255, 153, 51, 1) 100%)',  
+
+// Naranja Mate a Verde Suave
+'linear-gradient(90deg, rgba(255, 153, 51, 1) 0%, rgba(102, 153, 51, 1) 100%)',
+
+// Verde Suave a Azul Pastel
+'linear-gradient(90deg, rgba(102, 153, 51, 1) 0%, rgba(51, 153, 255, 1) 100%)',
+
+// Azul Pastel a Violeta Suave
+'linear-gradient(90deg, rgba(51, 153, 255, 1) 0%, rgba(153, 102, 204, 1) 100%)',
+
+// Violeta Suave a Rosa Suave
+'linear-gradient(90deg, rgba(153, 102, 204, 1) 0%, rgba(255, 182, 193, 1) 100%)',
+
+// Rosa Suave a Rojo Mate
+'linear-gradient(90deg, rgba(255, 182, 193, 1) 0%, rgba(204, 51, 51, 1) 100%)',
+
+// Rojo Mate a Cian Suave
+'linear-gradient(90deg, rgba(204, 51, 51, 1) 0%, rgba(102, 255, 255, 1) 100%)',
+
+// Cian Suave a Verde Suave
+'linear-gradient(90deg, rgba(102, 255, 255, 1) 0%, rgba(102, 153, 51, 1) 100%)',
+
+// Verde Suave a Naranja Mate
+'linear-gradient(90deg, rgba(102, 153, 51, 1) 0%, rgba(255, 153, 51, 1) 100%)',
+
+// Naranja Mate a Violeta Suave
+'linear-gradient(90deg, rgba(255, 153, 51, 1) 0%, rgba(153, 102, 204, 1) 100%)',
+
         ];
         const randomIndex = Math.floor(Math.random() * colors.length);
         return colors[randomIndex];
