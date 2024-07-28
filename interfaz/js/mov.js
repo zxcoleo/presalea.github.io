@@ -84,4 +84,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  
+  document.addEventListener('DOMContentLoaded', () => {
+    function getRandomColor() {
+        const colors = [
+            'linear-gradient(90deg, rgba(255, 105, 180, 1) 50%, rgba(255, 20, 147, 0.966) 80%)',  // Deep Pink
+            'linear-gradient(90deg, rgba(173, 216, 230, 1) 50%, rgba(70, 130, 180, 0.966) 80%)',  // Steel Blue
+            'linear-gradient(90deg, rgba(144, 238, 144, 1) 50%, rgba(34, 139, 34, 0.966) 80%)',  // Forest Green
+            'linear-gradient(90deg, rgba(255, 255, 224, 1) 50%, rgba(255, 215, 0, 0.966) 80%)',  // Gold
+            'linear-gradient(90deg, rgba(255, 192, 203, 1) 50%, rgba(255, 105, 97, 0.966) 80%)',  // Light Coral
+            'linear-gradient(90deg, rgba(255, 228, 225, 1) 50%, rgba(255, 160, 122, 0.966) 80%)',  // Light Salmon
+            'linear-gradient(90deg, rgba(240, 248, 255, 1) 50%, rgba(176, 224, 230, 0.966) 80%)',  // Powder Blue
+            'linear-gradient(90deg, rgba(250, 240, 230, 1) 50%, rgba(255, 228, 181, 0.966) 80%)'   // Blanched Almond
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        return colors[randomIndex];
+    }
+
+    // Seleccionar el primer elemento con la clase .purchase-interface
+    const purchaseInterfaces = document.querySelectorAll('.purchase-interface');
+    if (purchaseInterfaces.length > 0) {
+        // Cambiar el fondo de cada elemento con la clase .purchase-interface
+        purchaseInterfaces.forEach(element => {
+            element.style.background = getRandomColor();
+        });
+    } else {
+        console.error('Elemento con la clase "purchase-interface" no encontrado.');
+    }
+});
+
+
