@@ -136,7 +136,7 @@ var spanElement = document.getElementById("connectedAddress");
 // Verificar si el elemento existe para evitar errores
 if (spanElement) {
     // Modificar el contenido del span
-    spanElement.textContent = "🤑 Buy now and dive into a sea of opportunities. 🔥";
+    spanElement.textContent = "You've been chosen • Buy Now and Get 20 USDT Reward! 🤑🔥";
 }
 
 
